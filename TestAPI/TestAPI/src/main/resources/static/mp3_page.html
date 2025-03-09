@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프린터 선택 및 3D 모델 미리보기</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="mp3_style.css">
+</head>
+<body>
+  <div class="header-content">
+    <header>
+        <div class="header-step">
+            <i class="fas fa-keyboard"></i>
+            <span>프롬프트 입력</span>
+        </div>
+        <div class="header-separator">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="header-step">
+            <i class="fas fa-print"></i>
+            <span>프린터 선택 & 3D 모델 미리보기</span>
+        </div>
+        <div class="header-separator">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="header-step">
+            <i class="fas fa-clock"></i>
+            <span><strong>출력 예상시간 & 파일 추출</strong>     </span>
+        </div>
+    </header>
+  </div>
+
+<main>
+  <div class="preview-container">
+    <div class="model-preview">
+      <h2 class="model-header">선택된 3D 모델</h2>
+      <div class="square-image">
+        <img src="" alt="3D 모델 미리보기"> <!-- src 속성은 JavaScript로 설정됨 -->
+      </div>
+    </div>
+    <div class="printer-info">
+      <h2 class="select-printer-label">선택된 프린터</h2>
+      <div class="printer-details">
+        <h2 class="printer-name"></h2>
+        <h2 class="output-time-label">사용자가 입력한 프롬프트</h2>
+        <h2 class="output-time"></h2>
+      </div>
+      <div class="button-container">
+        <button id="mp3_page" class="next-page">파일 다운로드</button>
+        <button class="go-main">프롬프트 재입력</button>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="mp3_script.js"></script>
+</body>
+</html>

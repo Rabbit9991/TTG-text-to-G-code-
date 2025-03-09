@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box; /* 모든 요소에 box-sizing 적용 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    padding: 0; /* 페이지 전체에 여백 추가 */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%; /* 컨테이너 너비를 100%로 설정 */
+    overflow: hidden; /* 좌우 스크롤 제거 */
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 1000;
+    height: 65px; /* 명시적인 높이 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-step {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.header-step i {
+    margin-right: 8px;
+    color: #ecf0f1;
+}
+
+.header-separator {
+    font-size: 18px;
+    margin: 0 10px; /* 좌우 여백 추가 */
+}
+
+.header-separator i {
+    color: #ecf0f1;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center; /* 중앙 정렬 */
+    width: 100%; /* 메인 너비를 100%로 설정 */
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 98%;
+    height: calc(100vh - 140px); /* 헤더와 페이지 전체 여백을 제외한 높이 설정 */
+    border: 2px solid #ccc; /* 테두리 추가 */
+    border-radius: 10px; /* 둥근 모서리 추가 */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    margin: 15px auto; /* 중앙 정렬 및 여백 추가 */
+}
+
+.chat-box {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto; /* 내부 스크롤 추가 */
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+#prompt-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2c3e50;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-button i {
+    margin-right: 5px;
+}
+
+.chat-button:hover {
+    background-color: #34495e;
+}
+
+.chat-message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 60%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #f1f1f1;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #999;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.loading-message {
+    background-color: #999;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.thumbnail {
+    max-width: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프린터 선택 및 3D 모델 미리보기</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="mp2_styles.css">
+</head>
+<body>
+    <div class="header-content">
+        <header>
+            <div class="header-step">
+                <i class="fas fa-keyboard"></i>
+                <span>프롬프트 입력</span>
+            </div>
+            <div class="header-separator">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="header-step">
+                <i class="fas fa-print"></i>
+                <span><strong>프린터 선택 & 3D 모델 미리보기</strong></span>
+            </div>
+            <div class="header-separator">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="header-step">
+                <i class="fas fa-clock"></i>
+                <span>출력 예상시간 & 파일 추출</span>
+            </div>
+        </header>
+    </div>
+    
+
+<main>
+    <div class="content-box"> <!-- 흰색 박스를 감싸는 div 추가 -->
+        <div class="printer-select">
+            <h2>프린터 선택</h2>
+            <div class="printer-options" id="printer-options"></div>
+        </div>
+        <div class="model-preview" id="model-preview"></div>
+    </div>
+</main>
+<script src="mp2_script.js"></script>
+</body>
+</html>

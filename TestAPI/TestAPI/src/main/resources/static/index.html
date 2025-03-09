@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>3D 텍스트 생성 채팅</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="mp1_styles.css" />
+</head>
+<body>
+    <script src="mp1_script.js"></script>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="header-step">
+                    <i class="fas fa-keyboard"></i>
+                    <span><strong>프롬프트 입력</strong></span>
+                </div>
+                <div class="header-separator">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="header-step">
+                    <i class="fas fa-print"></i>
+                    <span>프린터 선택 & 3D 모델 미리보기</span>
+                </div>
+                <div class="header-separator">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="header-step">
+                    <i class="fas fa-clock"></i>
+                    <span>출력 예상시간 & 파일 추출</span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="chat-container">
+                <div id="chat-box" class="chat-box"></div>
+                <div class="chat-input">
+                    <input type="text" id="prompt-input" class="chat-input" placeholder="프롬프트 입력">
+                    <button onclick="handleUserInput()" class="chat-button"><i class="fas fa-paper-plane"></i> 전송</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
